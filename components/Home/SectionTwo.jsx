@@ -62,11 +62,11 @@ const SectionTwo = () => {
                 }
                 <div className={styles.contentContainer}>
                     <div>
-                        <div className={styles.activeQues}>{activeData.ques}</div>
-                        <div className={styles.activeDesp}>{activeData.desp}</div>
+                        <div className={styles.activeQues}>{activeData?.ques}</div>
+                        <div className={styles.activeDesp}>{activeData?.desp}</div>
                     </div>
                     <div className={styles.button}>
-                        <Link href={activeData.buttonLink || "#"}>
+                        <Link href={activeData?.buttonLink || "#"}>
                             <button>know More</button>
                         </Link>
                     </div>
