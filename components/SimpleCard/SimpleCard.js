@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import styles from "./simplecard.module.css";
 import Image from 'next/image';
 
@@ -11,7 +11,7 @@ const SimpleCard = () => {
                     <Image alt="" src="/images/body-adults.png" fill />
                 </div>
                 <p className={`${styles.simpleCardPara}`}>
-                    You can be allergic to pets only if you own one. Now that doesn’t make much sense, does it? These so-called popular 'facts or beliefs' are far from the actual truth and we're here to get the facts straight. Know your allergy facts.
+                    You can be allergic to pets only if you own one. Now that doesnt make much sense, does it? These so-called popular facts or beliefs are far from the actual truth and were here to get the facts straight. Know your allergy facts.
                 </p>
                 <a href="#">
                     <button className={`${styles.buttonKnowMore}`}>Know More</button>
