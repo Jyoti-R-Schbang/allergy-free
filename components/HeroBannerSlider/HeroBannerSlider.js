@@ -18,20 +18,20 @@ let data = [
         image: "/images/banner_1.png",
         id: '1'
     },
-    {
-        title: "Outdoor Allergies.",
-        subTitle: "Take the first step towards understanding and managing ",
-        buttonLink: "#",
-        image: "/images/banner_2.png",
-        id: '1'
-    },
-    {
-        title: "Outdoor Allergies.",
-        subTitle: "Take the first step towards understanding and managing ",
-        buttonLink: "#",
-        image: "/images/banner_3.png",
-        id: '1'
-    },
+    // {
+    //     title: "Outdoor Allergies.",
+    //     subTitle: "Take the first step towards understanding and managing ",
+    //     buttonLink: "#",
+    //     image: "/images/banner_2.png",
+    //     id: '1'
+    // },
+    // {
+    //     title: "Outdoor Allergies.",
+    //     subTitle: "Take the first step towards understanding and managing ",
+    //     buttonLink: "#",
+    //     image: "/images/banner_3.png",
+    //     id: '1'
+    // },
 ]
 
 const HeroBannerSlider = () => {
@@ -41,7 +41,7 @@ const HeroBannerSlider = () => {
     return (
         <>
             {
-                data && data.length > 1 ?
+                data && data.length > 0 &&
                     <div className='relative'>
                         <Swiper
                             slidesPerView={1}
@@ -76,8 +76,8 @@ const HeroBannerSlider = () => {
                         </Swiper>
                         <div id='home-swiper-custom-pagination' />
                     </div>
-                    :
-                    <div></div>
+                    // :
+                    // <div></div>
             }
         </>
     )
