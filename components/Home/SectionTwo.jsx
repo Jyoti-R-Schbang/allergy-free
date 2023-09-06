@@ -1,25 +1,32 @@
 import React, { createRef, useEffect, useRef, useState } from 'react';
 import styles from "./sectiontwo.module.css";
 import Image from 'next/image';
+import Link from 'next/link';
 
 let data = [
     {
         id: 1,
         title: 'Which allergy do you suffer from?',
-        desp: 'Can’t breathe easy?',
-        image: '/images/body-adults.png'
+        ques: 'Can’t breathe easy?',
+        image: '/images/body-adults.png',
+        desp: 'lorem ipsum dolor sit amet, do eiusmod tempor incididunt ut labore',
+        buttonLink: '#'
     },
     {
         id: 2,
         title: 'Which allergy do you suffer from?',
-        desp: 'Can’t breathe easy?',
-        image: '/images/mother.png'
+        ques: 'Can’t breathe easy?',
+        image: '/images/mother.png',
+        desp: 'lorem ipsum dolor sit amet, consectetur lorem, sed do eiusmod tempor incididunt ut labore',
+        buttonLink: '#'
     },
     {
         id: 3,
         title: 'Which allergy do you suffer from?',
-        desp: 'Can’t breathe easy?',
-        image: "/images/medical.png"
+        ques: 'Can’t breathe easy?',
+        image: "/images/medical.png",
+        desp: 'consectetur lorem, sed do eiusmod tempor incididunt ut labore',
+        buttonLink: '#'
     }
 ]
 
@@ -53,6 +60,17 @@ const SectionTwo = () => {
                         onAnimationEnd={() => setFadeActive(0)}
                         fill />
                 }
+                <div className={styles.contentContainer}>
+                    <div>
+                        <div className={styles.activeQues}>{activeData.ques}</div>
+                        <div className={styles.activeDesp}>{activeData.desp}</div>
+                    </div>
+                    <div className={styles.button}>
+                        <Link href={activeData.buttonLink || "#"}>
+                            <button>know More</button>
+                        </Link>
+                    </div>
+                </div>
             </div>
             <div className={`${styles.secCard}`}>
                 {
@@ -68,7 +86,7 @@ const SectionTwo = () => {
                                 {item.title}
                             </div>
                             <div className={`${styles.cardpara} ${activeIndex === index && styles.cardparaActive}`}>
-                                {item.desp}
+                                {item.ques}
                             </div>
                         </div>
                     ))
