@@ -1,0 +1,48 @@
+.heroBanner {
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
+
+.contentContainer {
+    width: 1140px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.contentWrapper {
+    width: 50%;
+}
+
+.subTitle {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.title {
+    color: rgba(var(--custom-light-color), 1);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    width: 165px;
+    padding: 10px 30px;
+    background-color: var(--custom-green);
+    border-radius: 65px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    color: white;
+    margin-top: 30px;
+}

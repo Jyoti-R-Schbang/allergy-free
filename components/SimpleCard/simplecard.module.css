@@ -1,0 +1,53 @@
+.cardImageSec3 {
+    width: 297px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cardImageSec3 img {
+    transform: scale(1);
+    transition: all 200ms ease-in-out;
+}
+
+.cardImageSec3:hover img {
+    transform: scale(1.2);
+    transition: all 200ms ease-in-out;
+}
+
+.simpleCard {
+    display: flex;
+    width: 360px;
+    height: 500px;
+    padding: 40px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    border-radius: 5px;
+    background: #850C7C;
+    color: white;
+}
+
+.simpleCard .title {
+    font-weight: 700;
+}
+
+.simpleCard .simpleCardPara {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.buttonKnowMore {
+    display: flex;
+    width: 165px;
+    padding: 10px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 65px;
+    background-color: var(--custom-green);
+    font-weight: 700;
+    line-height: 30px;
+}
