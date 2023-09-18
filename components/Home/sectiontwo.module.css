@@ -180,6 +180,12 @@
         padding-bottom: 15px;
         align-items: start;
         width: 100%;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .sectionCardContainer .secCard::-webkit-scrollbar {
+        display: none;
     }
 
     .secCard .card {

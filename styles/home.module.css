@@ -10,5 +10,12 @@
     .cardContainer {
         justify-content: flex-start;
         overflow-x: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
+    
+    .cardContainer::-webkit-scrollbar {
+        display: none;
+    }
+
 }
