@@ -12,6 +12,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: box-shadow 0.25s ease-in-out;
+}
+
+.headernoboxshadow {
+    box-shadow: none;
 }
 
 .logo {
@@ -30,22 +35,47 @@
     line-height: 150%;
 }
 
-.lang {
-    display: flex;
-    column-gap: 20px;
+.mobileBurgerMenu {
+    display: none;
 }
 
-.lang .langSelector {
-    color: #442256;
-    text-align: center;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    border-bottom: 4px solid transparent;
+.offSetMenu {
+    display: none;
 }
 
-.lang .langActive {
-    color: var(--custom-green);
-    border-bottom: 4px solid var(--custom-green);
+.langContainer {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: 80px;
+        padding-inline: 30px;
+    }
+
+    .navMainContainer {
+        display: none;
+    }
+
+    .logo {
+        width: 135.83px;
+        height: 48px;
+    }
+
+    .langContainer {
+        display: none;
+    }
+
+    .mobileBurgerMenu {
+        display: block;
+    }
+
+    .offSetMenu {
+        display: block;
+        height: 100vh;
+        /* width: 100vw; */
+        width: auto;
+        position: absolute;
+        overflow: hidden;
+    }
 }

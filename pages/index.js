@@ -11,7 +11,7 @@ export default function Home(props) {
   // const { t } = useTranslation();
 
   return (
-    <div className={`mt-[100px] ${styles.homePageMainContainer}`}>
+    <div className={`mt-[80px] md:mt-[100px] ${styles.homePageMainContainer}`}>
       {/* section - 1 / banner / swiper */}
       <HeroBannerSlider />
 
@@ -19,7 +19,7 @@ export default function Home(props) {
       <SectionTwo />
 
       {/* section - 3 / simple card */}
-      <div className='flex gap-x-7 justify-center mt-24'>
+      <div className={`flex gap-x-4 md:gap-x-7 justify-center mt-16 md:mt-24 ${styles.cardContainer}`}>
         <SimpleCard />
       </div>
     </div>

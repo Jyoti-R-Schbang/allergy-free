@@ -32,3 +32,12 @@
     transition: all 100ms ease-in-out;
 
 }
+
+
+@media screen and (max-width: 768px) {
+    #home-swiper-custom-pagination {
+        width: auto;
+        left: 23px;
+        transform: initial;
+    }
+}

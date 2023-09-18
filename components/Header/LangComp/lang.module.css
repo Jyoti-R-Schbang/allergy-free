@@ -1,0 +1,20 @@
+.lang {
+    display: flex;
+    column-gap: 20px;
+}
+
+.lang .langSelector {
+    color: #442256;
+    text-align: center;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: 0.25s ease-in-out;
+}
+
+.lang .langActive {
+    color: var(--custom-green);
+    border-bottom: 2px solid var(--custom-green);
+}

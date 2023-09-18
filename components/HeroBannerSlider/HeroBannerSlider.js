@@ -9,32 +9,38 @@ import 'swiper/css';
 import "swiper/css/autoplay";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
+import UseWindowWidth from '@/utils/useWindowWidth';
 
 let data = [
     {
         title: "Outdoor Allergies.",
-        subTitle: "Take the first step towards understanding and managing ",
+        subTitle: "Take the first step towards understanding and managing",
         buttonLink: "#",
         image: "/images/banner_1.png",
+        imageMob: "/images/mobile_banner.png",
         id: '1'
     },
     {
-        title: "Outdoor Allergies.lorem",
-        subTitle: "lorem ipsum dolor ",
+        title: "Indoor Allergies",
+        subTitle: "Take the first step towards understanding and managing",
         buttonLink: "#",
         image: "/images/banner_1.png",
+        imageMob: "/images/mobile_banner.png",
         id: '1'
     },
     {
-        title: "Outdoor Allergies. test",
-        subTitle: "Take the first step towards understanding and managing lorem ipsumaaa ",
+        title: "Childhood Allergies",
+        subTitle: "Take the first step towards understanding and managing",
         buttonLink: "#",
         image: "/images/banner_1.png",
+        imageMob: "/images/mobile_banner.png",
         id: '1'
     },
 ]
 
 const HeroBannerSlider = () => {
+
+    const isMobile = UseWindowWidth() < 768;
 
     if (!data) return
 
@@ -45,9 +51,10 @@ const HeroBannerSlider = () => {
                 <div className='relative'>
                     <Swiper
                         slidesPerView={1}
+                        loop="true"
                         modules={[Autoplay, EffectFade, Pagination]}
                         pagination={{ clickable: true, el: "#home-swiper-custom-pagination" }}
-                        // autoplay={{ delay: 2000 }}
+                        autoplay={{ delay: 1500 }}
                         effect="fade"
                     >
                         {
@@ -56,7 +63,7 @@ const HeroBannerSlider = () => {
                                 <SwiperSlide key={index}>
                                     <div className={styles.heroBanner}>
                                         <div className='relative h-full'>
-                                            <Image src={item.image} fill alt={item.title} />
+                                            <Image src={isMobile ? item.imageMob : item.image} fill alt={item.title} />
                                         </div>
                                         <div className={styles.contentContainer}>
                                             <div className={styles.contentWrapper}>

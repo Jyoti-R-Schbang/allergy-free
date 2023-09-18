@@ -12,6 +12,7 @@ const SimpleCard = () => {
                 </div>
                 <p className={`${styles.simpleCardPara}`}>
                     You can be allergic to pets only if you own one. Now that doesnt make much sense, does it? These so-called popular facts or beliefs are far from the actual truth and were here to get the facts straight. Know your allergy facts.
+                    
                 </p>
                 <a href="#">
                     <button className={`${styles.buttonKnowMore}`}>Know More</button>

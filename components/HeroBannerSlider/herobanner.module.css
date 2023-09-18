@@ -49,3 +49,33 @@
     color: white;
     /* margin-top: 30px; */
 }
+
+
+@media screen and (max-width: 768px) {
+    .contentContainer {
+        width: auto;
+        align-items: flex-end;
+        bottom: 115px;
+        right: 0;
+        left: 23px;
+        right: 23px;
+    }
+
+    .contentWrapper {
+        width: auto;
+        height: 200px;
+    }
+
+    .heroBanner {
+        height: 764px;
+    }
+
+    .subTitle {
+        font-size: 20px;
+        padding-bottom: 8px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+}

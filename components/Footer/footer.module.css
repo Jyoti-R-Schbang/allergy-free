@@ -1,7 +1,7 @@
 .footer {
     width: 100%;
     background-color: var(--custom-violet);
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     margin-top: 100px;
     height: 530px;
     padding-top: 80px;
@@ -15,7 +15,7 @@
     margin: auto;
 }
 
-.content {
+.footerContentWrapper {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -26,7 +26,7 @@
 }
 
 .title {
-    color: #FFF;
+    color: rgba(255, 255, 255, 0.8);
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -35,14 +35,20 @@
     padding-bottom: 20px;
 }
 
+.titleNoPaddingBottom {
+    padding-bottom: 0 !important;
+}
+
 .simple {
-    color: #FFF;
+    color: rgba(255, 255, 255, 0.8);
+    ;
     font-size: 14px;
     font-weight: 400;
     line-height: 140%;
     text-transform: capitalize;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     cursor: pointer;
+    width: 165px;
 }
 
 .simpleLastEle {
@@ -74,4 +80,82 @@
     font-weight: 400;
     line-height: 140%;
     text-transform: capitalize;
+}
+
+/* mobile view / accordion */
+.accordionMainClass {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--custom-violet);
+    border-radius: 0 !important;
+}
+
+.accordionMainClass::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 23px;
+    right: 23px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.20);;
+}
+
+.accordionHeaderClass {
+    color: white;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 370%;
+    text-transform: uppercase;
+}
+
+.accordionHeaderClassActive {
+    /* border-bottom: 2px solid transparent; */
+}
+
+.accordionBodyClass {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.accordionBodyClass li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.accordionFooter {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .footer {
+        background: linear-gradient(259deg, #800B79 50.9%, #492058 106.06%);
+        padding: 30px 23px;
+        height: 341px;
+        margin-top: 0;
+    }
+
+    .footerContainer {
+        width: auto;
+    }
+
+    .footerContentWrapper {
+        display: none;
+    }
+
+    .footerRightContainer {
+        width: auto;
+    }
+
+    .footerImage {
+        width: 165px;
+        height: 58px;
+    }
+
+    .accordionFooter {
+        display: block;
+        margin-top: 64px;
+    }
 }

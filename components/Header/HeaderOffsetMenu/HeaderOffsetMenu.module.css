@@ -1,0 +1,47 @@
+.offsetMenuContainer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 75px;
+    z-index: 10;
+    right: 100%;
+    left: 100%;
+    width: 100%;
+    height: calc(100% - 76px);
+    background-color: white;
+    padding: 30px;
+    font-weight: 600;
+    line-height: 150%;
+    transition: .25s ease-in-out;
+}
+
+.offsetMenuContainer::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: white;
+}
+
+.offsetMenuContainer::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #833A95;
+}
+
+.open {
+    left: 0;
+}
+
+.offsetMenuContainer .innerNav {
+    padding-bottom: 30px;
+    color: var(--custom-violet);
+}

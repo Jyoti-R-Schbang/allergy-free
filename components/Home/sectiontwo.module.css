@@ -148,3 +148,92 @@
     border-bottom: 15px solid transparent;
     border-right: 15px solid rgba(var(--custom-light-color), 0.2);
 }
+
+@media screen and (max-width: 768px) {
+    .sectionCardContainer {
+        flex-direction: column-reverse;
+        height: auto;
+        column-gap: normal;
+        margin-top: 60px;
+        overflow: hidden;
+    }
+
+    .sectionCardContainer .secCardContainerActive {
+        /* height: 680px; */
+        height: 650px;
+        border-radius: 0px;
+    }
+
+    .secCardContainerActive .contentContainer {
+        width: auto;
+        left: 0;
+        justify-content: flex-end;
+        padding-left: 23px;
+        padding-right: 23px;
+    }
+
+    .sectionCardContainer .secCard {
+        flex-direction: row;
+        overflow: auto;
+        column-gap: 16px;
+        white-space: nowrap;
+        padding-bottom: 15px;
+        align-items: start;
+        width: 100%;
+    }
+
+    .secCard .card {
+        width: 190px;
+        height: 58px;
+        padding: 0;
+        display: grid;
+        place-content: center;
+        flex: 0 0 auto;
+    }
+
+    .secCard .card:first-child {
+        margin-left: 23px;
+    }
+
+    .secCard .card:last-child {
+        margin-right: 23px;
+    }
+
+    .secCard .card .cardQues,
+    .secCard .card .cardpara {
+        text-wrap: wrap;
+        font-size: 14px;
+    }
+
+    .secCard .card .cardQues {
+        padding-inline: 8px;
+    }
+
+    .secCard .card .cardpara {
+        /* display: none; */
+        position: absolute;
+    }
+
+    .secCard .card .cardparaActive {
+        /* width: 190px;
+        height: 58px; */
+    }
+
+    .secCard .card .cardQuesActive {
+        display: none;
+    }
+
+    .secCard .card .cardparaActive::before {
+        display: none;
+    }
+
+    .secCardContainerActive .contentContainer .activeQues {
+        font-size: 18px;
+        padding-bottom: 8px;
+    }
+
+    .secCardContainerActive .contentContainer .activeDesp {
+        font-size: 24px;
+    }
+
+}
