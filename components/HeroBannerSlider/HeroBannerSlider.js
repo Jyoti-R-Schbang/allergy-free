@@ -63,7 +63,8 @@ const HeroBannerSlider = () => {
                                 <SwiperSlide key={index}>
                                     <div className={styles.heroBanner}>
                                         <div className='relative h-full'>
-                                            <Image src={!isMobile ? item.image : item.imageMob} fill alt={item.title} />
+                                            <Image src={item.image} fill alt={item.title} className='hidden md:block' />
+                                            <Image src={item.imageMob} fill alt={item.title} className='block md:hidden' />
                                         </div>
                                         <div className={styles.contentContainer}>
                                             <div className={styles.contentWrapper}>
