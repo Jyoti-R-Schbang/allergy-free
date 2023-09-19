@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { FaInstagramSquare } from "react-icons/fa";
 import { ImFacebook2 } from "react-icons/im";
 import useWindowWidth from '@/utils/useWindowWidth';
-import AccordionComp from '../AccodionComp/AccordionComp';
+import AccordionComp from '@/components/AccodionComp/AccordionComp';
 import { FiPlus, FiMinus } from 'react-icons/fi'
 
 let footerData = [
