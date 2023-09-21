@@ -4,6 +4,7 @@ import Image from 'next/image';
 import MobileHamburger from './MobileHamburger';
 import HeaderOffsetMenu from './HeaderOffsetMenu/HeaderOffsetMenu';
 import LangComp from './LangComp/LangComp';
+// import Logo from '@/components/Svg/Logo';
 
 const Header = () => {
     const [burgerOpen, setBurgerOpen] = useState(false)
@@ -14,7 +15,8 @@ const Header = () => {
         <div style={{ position: 'relative' }}>
             <header className={`${styles.header} ${burgerOpen ? styles.headernoboxshadow : undefined}`}>
                 <div className={styles.logo}>
-                    <Image src="/images/logo.png" alt="logo" fill />
+                    <Image src="/images/logo.svg" alt="logo" fill />
+                    {/* <Logo /> */}
                 </div>
                 <div className={styles.navMainContainer}>
                     <a href="#"><div className={styles.innerNav}>Know Your Allergy</div></a>

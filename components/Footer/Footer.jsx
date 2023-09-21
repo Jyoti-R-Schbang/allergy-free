@@ -133,7 +133,8 @@ const Footer = () => {
                     {/* company logo / social icons / address */}
                     <div className={styles.footerRightContainer}>
                         <div className={styles.footerImage}>
-                            <Image src={!isMobile ? "/images/logo_footer.png" : "/images/white_logo_allergy_free.png"} alt='footer-logo' fill />
+                            <Image src={"/images/logo.svg"} className='hidden md:block' alt='footer-logo' fill />
+                            <Image src={"/images/logo.svg"} className='block md:hidden' style={{filter: 'brightness(0) invert(1)'}} alt='footer-logo' fill />
                         </div>
                         <div className={styles.socialIconsContainer}>
                             <div><FaInstagramSquare color='white' size={"40px"} /></div>
